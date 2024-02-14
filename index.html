@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editable Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script src="index.js"></script>
+<body>
+    <div class="top"><h1>BootStrap Table</h1></div>
+    <input type="text" id="myInput" onkeyup="fun1()" placeholder="Search for names..">
+    <br>
+    <br>
+    <table id="myTable">
+        <tr class="header">
+            <th style="width:30%;">Name</th>
+            <th style="width:30%;">Email</th>
+            <th style="width:10%;">Age</th>
+            <th style="width:30%;">Phone</th>
+        </tr>
+        <tr>
+            <td contenteditable="true">User</td>
+            <td contenteditable="true">user@example.com</td>
+            <td contenteditable="true">100</td>
+            <td contenteditable="true">+1 1234567890</td>
+        </tr>
+    </table>
+    <div class="add-remove-buttons">
+        <button class="add-button" onclick="addRow()">Add Row</button>
+        <button class="download-button" onclick="downloadJSON()">Download JSON</button>
+    </div>
+</body>
+</html>
